@@ -11,6 +11,7 @@ namespace CrudCliente.Models
         public string Nome { get; set; }
         [EmailAddress(ErrorMessage = "Email Inválido")]
         public string Email { get; set; }
+        [Display(Name ="Endereço")]
         public string Endereco { get; set; }
         public string Contato { get; set;}
 
