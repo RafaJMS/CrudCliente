@@ -44,9 +44,15 @@
                 @Html.DisplayFor(modelItem => item.Contato)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.ID">Editar</a> |
-                <a asp-action="Details" asp-route-id="@item.ID">Detalhes</a> |
-                <a asp-action="Delete" asp-route-id="@item.ID">Deletar</a>
+                <a asp-action="Edit" asp-route-id="@item.ID">
+                        <img class="index-icon" src="https://www.svgrepo.com/show/522527/edit-3.svg" alt="icon">
+                </a> |
+                <a asp-action="Details" asp-route-id="@item.ID">
+                        <img class="index-icon" src="https://www.svgrepo.com/show/433410/details-so.svg" alt="icon">
+                </a> |
+                <a asp-action="Delete" asp-route-id="@item.ID">
+                        <img class="index-icon" src="https://www.svgrepo.com/show/433400/delete-o.svg" alt="icon">
+                </a>
             </td>
         </tr>
 }

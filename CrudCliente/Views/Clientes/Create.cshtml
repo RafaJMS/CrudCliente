@@ -5,37 +5,45 @@
 }
 
 <h1 class="mb-3">Inserção de Cliente</h1>
-
 <h4>Novo Cliente</h4>
 <hr />
 <div class="row">
     <div class="d-grid gap-3">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="input-group p-2 col gap-3 d-grid">
+
+            <div class="input-group p-3 col gap-3 d-grid">
+
                 <div class="input-group col-6 d-flex flex-row w-50">
                     <label asp-for="Nome" class="input-group-text"></label>
                     <input asp-for="Nome" class="form-control" />
                 </div>
+
                 <span asp-validation-for="Nome" class="text-danger"></span>
+
                 <div class="input-group col-6 d-flex flex-row w-50">
                     <label asp-for="Email" class="input-group-text"></label>
                     <input asp-for="Email" class="form-control" />  
                 </div>
+
                 <span asp-validation-for="Email" class="text-danger"></span>
-            </div>
-            <div class="input-group p-2 col gap-3 d-grid">
-                <div class= "input-group g-col-6 d-flex flex-row w-50">
+
+                <div class="input-group col-6 d-flex flex-row w-50">
                     <label asp-for="Endereco" class="input-group-text"></label>
                     <input asp-for="Endereco" class="form-control" />
                 </div>
+
                 <span asp-validation-for="Endereco" class="text-danger"></span>
-                <div class="input-group g-col-6 d-flex flex-row w-50">
+
+                <div class="input-group col-6 d-flex flex-row w-50">
                     <label asp-for="Contato" class="input-group-text"></label>
                     <input asp-for="Contato" class="form-control" />
-                </div>          
+                </div>         
+                
                 <span asp-validation-for="Contato" class="text-danger"></span>
+
             </div>
+
             <div class="grid gap-3 row">
                 <input type="submit" value="Inserir" class="btn btn-primary p-2 g-col-3 w-25" />
                 <a asp-action="Index" class="btn btn-outline-primary p-2 g-col-3 w-25">Voltar </a>
